@@ -104,29 +104,86 @@ function Category() {
         <div className="card" id="card2">
           <div className="card-icon"></div>
           <div className="card-desc">
-          <h2 className="card-title">Best Flights </h2>
+            <h2 className="card-title">Best Flights </h2>
             <p className="card-detl">
-            Engrossed listening. Park gate sell they west hard for the.
+              Engrossed listening. Park gate sell they west hard for the.
             </p>
           </div>
+          <div className="underlay"></div>
         </div>
         <div className="card" id="card3">
           <div className="card-icon"></div>
-          <div className="card-desc"></div>
+          <div className="card-desc">
+            <h2 className="card-title">Local Events </h2>
+            <p className="card-detl">
+              Barton vanity itself do in it. Preferd to men it engrossed
+              listening.
+            </p>
+          </div>
         </div>
         <div className="card" id="card4">
           <div className="card-icon"></div>
-          <div className="card-desc"></div>
+          <div className="card-desc">
+            <h2 className="card-title">Customization</h2>
+            <p className="card-detl">
+              We deliver outsourced aviation services for military customers
+            </p>
+          </div>
+          
         </div>
       </div>
     </div>
   );
+}
+
+function Destination(){
+  return(
+    <div className="destination">
+      <div className="destination-title">
+        <p className="destination-subtitle">Top Selling</p>
+        <h2 className="destination-title">Top Destinations</h2>
+      </div>
+      <div className="destination-items">
+        <div className="item">
+          <div className="item-img"></div>
+          <div className="item-desc">
+            <div className="upper-desc">
+              <p>Rome, Italty</p>
+              <p>$5,42k</p>
+            </div>
+            <div className="lower-desc"></div>
+          </div>
+        </div>
+        <div className="item">
+          <div className="item-img"></div>
+          <div className="item-desc">
+            <div className="upper-desc">
+              <p>Rome, Italty</p>
+              <p>$5,42k</p>
+            </div>
+            <div className="lower-desc"></div>
+          </div>
+        </div>
+        <div className="item">
+          <div className="item-img"></div>
+          <div className="item-desc">
+            <div className="upper-desc">
+              <p>Rome, Italty</p>
+              <p>$5,42k</p>
+            </div>
+            <div className="lower-desc"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
 ReactDOM.render(
   <div>
     <Header />
     <Banner />
     <Category />
+    <Destination/>
   </div>,
   document.getElementById("root")
 );

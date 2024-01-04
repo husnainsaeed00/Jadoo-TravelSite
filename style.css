@@ -158,7 +158,7 @@ border: 1px solid var(--1st, #212832);
     width: auto;
     margin-top: 90px;
     padding:50px;
-    height:800px;
+    height:700px;
 }
 .category>.category-header{
     display: flex;
@@ -231,10 +231,33 @@ border: 1px solid var(--1st, #212832);
 }
 #card2{
     flex-shrink: 0;
+    position: relative;
     border-radius: 36px;
+    z-index:0;
     background: var(--white, #FFF);
     box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
 }
+#card2>.underlay{
+    position: absolute;
+    width: 120px;
+    z-index:-3;
+    height: 120px;
+    bottom: -80px;
+    left: -30px;
+    border-radius: 30px 0px 10px 0px;
+    background: #df6951;
+}
+
+/* #card2::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    bottom: -60px;
+    left: -30px;
+    border-radius: 30px 0px 10px 0px;
+    background: #df6951;
+  } */
 #card2>.card-icon{
     background: url("assets/images/flight.svg");
     width: 166.874px;
@@ -244,4 +267,73 @@ border: 1px solid var(--1st, #212832);
     background-repeat: no-repeat;
     background-size: contain;
     margin-bottom: 0px;
+}
+#card3>.card-icon{
+    background: url("assets/images/mic.png");
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 0px;
+}
+#card4>.card-icon{
+    background: url("assets/images/setting.svg");
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 0px;
+}
+.destination{
+    display: flex;
+    flex-direction: column;
+    width:auto;
+    height:600px;
+    align-items: center;
+}
+.destination-subtitle{
+    color: var(--TEXT-CLR, #5E6282);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.destination-title{
+    color: var(--3rd, #14183E);
+    text-align: center;
+    font-family: Volkhov;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 0px;
+}
+.destination-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.destination-items>.item{
+    width:200px;
+    height:400px;
+    background-color: antiquewhite;
+}
+.item>.item-img{
+    background: url("assets/images/Rectangle.png");
+    width:200px;
+    height:260px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.item>.item-desc{
+    width:auto;
+    height:140px;
 }
