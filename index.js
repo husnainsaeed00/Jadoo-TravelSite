@@ -129,15 +129,14 @@ function Category() {
               We deliver outsourced aviation services for military customers
             </p>
           </div>
-          
         </div>
       </div>
     </div>
   );
 }
 
-function Destination(){
-  return(
+function Destination() {
+  return (
     <div className="destination">
       <div className="destination-title">
         <p className="destination-subtitle">Top Selling</p>
@@ -145,45 +144,100 @@ function Destination(){
       </div>
       <div className="destination-items">
         <div className="item">
-          <div className="item-img"></div>
+          <div className="item-img" id="item"></div>
           <div className="item-desc">
             <div className="upper-desc">
               <p>Rome, Italty</p>
               <p>$5,42k</p>
             </div>
-            <div className="lower-desc"></div>
+            <div className="lower-desc">
+              <img src="assets/images/navigation.svg" alt="navigation" />
+              <p>2 days trip</p>
+            </div>
           </div>
         </div>
         <div className="item">
-          <div className="item-img"></div>
+          <div className="item-img" id="item"></div>
           <div className="item-desc">
             <div className="upper-desc">
               <p>Rome, Italty</p>
               <p>$5,42k</p>
             </div>
-            <div className="lower-desc"></div>
+            <div className="lower-desc">
+              <img src="assets/images/navigation.svg" alt="navigation" />
+              <p>2 days trip</p>
+            </div>
           </div>
         </div>
         <div className="item">
-          <div className="item-img"></div>
+          <div className="item-img" id="item"></div>
           <div className="item-desc">
             <div className="upper-desc">
               <p>Rome, Italty</p>
               <p>$5,42k</p>
             </div>
-            <div className="lower-desc"></div>
+            <div className="lower-desc">
+              <img src="assets/images/navigation.svg" alt="navigation" />
+              <p>2 days trip</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
+}
+
+function Bookings() {
+  return (
+    <div className="booking">
+      <div className="left-booking">
+        <h3 className="booking-subtitle">Easy and Fast</h3>
+        <h2 className="booking-title">Book your next trip in 3 easy steps</h2>
+        <div className="choose-dest">
+          <div className="dest-icon"></div>
+          <div className="dest-detl">
+            <h4 className="dest-detl-title">Choose Destination</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+              tortor tempus.
+            </p>
+          </div>
+        </div>
+        <div className="choose-dest">
+          <div className="dest-icon"></div>
+          <div className="dest-detl">
+            <h4 className="dest-detl-title">Choose Destination</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+              tortor tempus.
+            </p>
+          </div>
+        </div>
+        <div className="choose-dest">
+          <div className="dest-icon"></div>
+          <div className="dest-detl">
+            <h4 className="dest-detl-title">Choose Destination</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+              tortor tempus.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="right-booking">
+        <div className="booking-img"></div>
+        <div className="booking-detl"></div>
+      </div>
+    </div>
+  );
 }
 ReactDOM.render(
   <div>
     <Header />
     <Banner />
     <Category />
-    <Destination/>
+    <Destination />
+    <Bookings />
   </div>,
   document.getElementById("root")
 );
